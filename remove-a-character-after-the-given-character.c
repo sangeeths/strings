@@ -24,6 +24,7 @@ void remove_after(char *s, char c)
     while(s[i]) {
         if (s[i] == c) {
             s[j++] = s[i++];
+            if (s[i] == '\0') break;
         } else { 
             s[j++] = s[i];
         }
